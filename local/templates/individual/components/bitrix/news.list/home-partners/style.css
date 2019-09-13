@@ -1,0 +1,125 @@
+.section-partners {
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+.partners__box {
+    padding: 0 40px;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.partners__slider {
+    padding: 60px 30px;
+    border: 1px solid #E7E7E7;
+    background-color: #fff;
+    position: relative;
+}
+
+.partners__item {
+    height: 155px!important;
+    width: 240px!important;
+    border: 1px solid #E7E7E7;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.partners-prev, .partners-next {
+    display: block;
+    position: absolute;
+    top: calc(50% - 15px);
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.partners-prev:after, .partners-next:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 7px);
+    left: calc(50% - 5px);
+    background-color: transparent;
+    width: 11px;
+    height: 11px;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-left-width: 3px;
+    border-left-style: solid;
+    cursor: pointer;
+}
+
+.partners-next {
+    right: -40px;
+    transform: rotate(135deg);
+}
+
+.partners-prev {
+    left: -40px;
+    transform: rotate(-45deg);
+}
+
+.partners__more {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+    .partners__box {
+        padding: 0;
+    }
+    .partners__slider {
+        padding: 60px 90px 25px;
+    }
+    .slick-slide > div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .partners__item {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .partners__item:not(:nth-child(2)) {
+        margin-right: 30px;
+    }
+    .partners__more {
+        display: block;
+    }
+    .partners-prev, .partners-next {
+        display: none!important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .section-partners {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .partners__item {
+        width: 100%!important;
+    }
+    .partners__item:not(:nth-child(2)) {
+        margin-right: 0px;
+    }
+    .partners__slider {
+        padding: 60px 90px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .partners__item {
+        width: 100%!important;
+    }
+    .partners__slider {
+        padding: 60px 30px 40px;
+    }
+    .partners__more {
+        padding: 25px 0;
+    }
+}

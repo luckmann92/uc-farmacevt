@@ -1,0 +1,107 @@
+.reviews__list .section-title {
+    text-align: center;
+    width: 100%;
+}
+.reviews-nav__list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.reviews-content {
+    width: 100%;
+}
+.review-nav__item {
+
+}
+.review-nav__image {
+    width: 276px;
+    height: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.review-nav__name {
+    font-size: 0.9333rem;
+    font-weight: 600;
+    line-height: 1.333rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: table-caption;
+}
+.review-nav__date {
+    font-size: 0.9333rem;
+    opacity: 0.5;
+}
+.review__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 36px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.review__arrow:after, .review__arrow:before {
+    content: '';
+    position: absolute;
+    display: block;
+}
+.review__arrow:before {
+    top: calc(50% - 4px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+.review__arrow:after {
+    top: calc(50% - 1px);
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+}
+.review__arrow:hover:after, .review__arrow:focus:after, .review__arrow:active:after {
+    background: #333;
+}
+.review__prev {
+    left: 0;
+}
+.review__prev:before {
+    left: 0;
+    border-width: 4px 6px 4px 0;
+}
+.review__prev:hover:before, .review__prev:focus:before, .review__prev:active:before {
+    border-color: transparent #333 transparent transparent;
+}
+.review__next {
+    right: 0;
+}
+.review__next:before {
+    right: 0;
+    border-width: 4px 0 4px 6px;
+}
+.review__next:hover:before, .review__next:focus:before, .review__next:active:before {
+    border-color: transparent transparent transparent #333;
+}
+
+@media screen and (min-width:320px) and (max-width:1200px) {
+    .review-nav__image {
+        width: 210px;
+        height: 305px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .reviews-nav__list {
+        padding: 0 60px;
+    }
+    .review-nav__image {
+        margin: 0 auto;
+    }
+    .review-nav__info {
+        margin: 0 auto;
+        width: 210px;
+    }
+}

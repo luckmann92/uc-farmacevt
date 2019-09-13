@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+/.idea/
+/bitrix/
+/local/templates/individual/public/css/theme/*
+!/local/templates/individual/public/css/theme
+!/local/templates/individual/public/css/theme/MAIN_default.css
+!/local/templates/individual/public/css/theme/ACTION_default.css
+/local/templates/package.json
+/local/templates/package-lock.json
+/local/templates/individual/*.json
+/local/templates/build/
+/local/templates/node_modules/
+/local/templates/globals.js
+/local/templates/globals.json
+/local/templates/gulpfile.js
+/upload/

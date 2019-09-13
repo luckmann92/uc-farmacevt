@@ -1,0 +1,97 @@
+footer {
+    position: relative;
+    color: #aaa9ad;
+    flex: 0 0 auto;
+}
+footer a {
+    display: inline-block;
+    color: #fff;
+    transition: 250ms;
+}
+footer a:hover, footer a:focus, footer a:active {
+    color: #aaa9ad;
+    text-decoration: none;
+    transition: 400ms;
+}
+.footer-top {
+    padding: 70px 0;
+    background-color: #333;
+}
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-nav.two-columns ul {
+    columns: 2;
+    column-gap: 30px;
+}
+.footer-nav a {
+    margin-bottom: 15px;
+}
+.footer-nav li:last-child a {
+    margin-bottom: 0;
+}
+.footer-nav__title {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.footer-nav__catalog a {
+    font-size: 0.875rem;
+    color: #aaa9ad;
+}
+.footer-nav__catalog a:hover, .footer-nav__catalog a:active, .footer-nav__catalog a:focus {
+    color: #fff;
+}
+.footer-contact {
+    display: flex;
+    margin-bottom: 30px;
+}
+.footer-contact:last-child {
+    margin-bottom: 0;
+}
+.footer-contact__icon {
+    display: block;
+    justify-content: flex-start;
+}
+.footer-contact__icon svg {
+    max-width: 14px;
+    width: auto;
+}
+.footer-contact__icon svg path {
+    fill: #fff;
+}
+.footer-contact__name {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+.footer-bottom {
+    padding: 35px 0;
+    background-color: #3d3d3d;
+}
+footer .developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .developer span {
+    color: #fff;
+    font-size: 0.8125rem;
+}
+footer .developer a {
+    display: inline-flex;
+    padding-left: 10px;
+}
+footer .developer a:hover, footer .developer a:focus, footer .developer a:active {
+    transition: 300ms;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .footer-contact__icon svg {
+        position: absolute;
+        position: absolute;
+        left: calc(50% - 7px);
+        top: calc(50% - 7px);
+    }
+}

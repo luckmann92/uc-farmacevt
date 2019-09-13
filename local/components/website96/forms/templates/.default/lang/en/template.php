@@ -1,0 +1,1 @@
+<?$MESS["WEBSITE96_FORMS_NOT_SELECTED"] = "Not selected";

@@ -1,0 +1,114 @@
+.areas__grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 336px;
+    grid-gap: 30px;
+}
+
+.areas__item {
+    position: relative;
+    padding: 50px 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.areas__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.areas__image:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(33.19deg, #000000 -39.29%, rgba(0, 0, 0, 0) 74.63%);
+}
+
+.areas__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.areas__info {
+    position: relative;
+    max-width: 240px;
+    color: #fff;
+}
+
+.areas__info .btn {
+    margin-top: 22px;
+}
+
+.areas__name {
+    font-size: 1.333rem;
+    margin-bottom: 5px;
+}
+
+.areas__text {
+    line-height: 1.467rem;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px){
+    .areas__grid {
+        grid-auto-rows: 300px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px){
+    .areas__grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 482px;
+    }
+    .areas__item {
+        padding: 70px 40px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .areas__grid {
+        grid-auto-rows: 300px;
+    }
+    .areas__item {
+        padding: 50px 33px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px){
+    .areas__grid {
+        grid-auto-rows: 293px;
+    }
+    .areas__item {
+        padding: 40px 30px;
+    }
+    .areas__info {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .areas__info .btn {
+        width: 100%;
+    }
+}

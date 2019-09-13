@@ -1,0 +1,27 @@
+.header-bottom .catalog__menu li a:hover:before,
+.header__bottom,
+.btn.b-dark:hover, .btn.b-dark:focus, .btn.b-dark:active,
+.header__list li.more__menu .submenu li a
+{
+    background-color: #ff223d;
+}
+.btn.b-dark:hover, .btn.b-dark:focus, .btn.b-dark:active
+{
+    border-color: #ff223d;
+}
+.header .header__list li.more__menu .submenu li a,
+.header .header-bottom .catalog__menu li a {
+    color: #000;
+}
+.btn.b-dark:hover, .btn.b-dark:focus, .btn.b-dark:active,
+.header__bottom .header__list li a
+{
+    color:#fff;
+}
+.menu__dots, .menu__dots:after, .menu__dots:before {
+    background-color: #fff;
+}
+.header-top:before, .advantages__wrapper:before {
+    background-color: #F5F5F5;
+    opacity: 1!important;
+}

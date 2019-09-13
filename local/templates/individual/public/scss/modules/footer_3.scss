@@ -1,0 +1,126 @@
+footer {
+  position: relative;
+  color:#aaa9ad;
+  flex: 0 0 auto;
+  a {
+    display: inline-block;
+    color:#fff;
+    transition: 250ms;
+    &:hover, &:focus, &:active {
+      color:#aaa9ad;
+      text-decoration: none;
+      transition: 400ms;
+    }
+  }
+}
+.footer-top {
+  padding:70px 0;
+  background-color: #333;
+}
+.footer-nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &.two-columns {
+    ul {
+      columns: 2;
+      column-gap: 30px;
+    }
+  }
+  a {
+    margin-bottom: 15px;
+  }
+  li:last-child a {
+    margin-bottom: 0;
+  }
+}
+.footer-nav__title {
+  font-size: 1rem;
+  color:#fff;
+  margin-bottom: 15px;
+}
+.footer-nav__catalog {
+  a {
+    font-size: 0.875rem;
+    color:#aaa9ad;
+    &:hover, &:active, &:focus {
+      color:#fff;
+    }
+  }
+}
+.footer-contact {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.footer-contact__icon {
+  display: block;
+  justify-content: flex-start;
+  svg {
+    max-width: 14px;
+    width:auto;
+    path {
+      fill:#fff;
+    }
+  }
+}
+.footer-contact__name {
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+.footer-bottom {
+  padding:35px 0;
+  background-color:#3d3d3d;
+  .socicons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  .developer {
+    align-items: flex-end;
+  }
+}
+
+.footer-top {
+  .footer-search {
+    padding: 0;
+    input {
+      background-color: #fff;
+    }
+  }
+  .btn-white {
+    border-color: #fff;
+    color: #fff;
+    &:hover, &:focus, &:active {
+      border-color: transparent;
+    }
+  }
+}
+footer {
+  .developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      color:#fff;
+      font-size: 0.8125rem;
+    }
+    a {
+      display:inline-flex;
+      padding-left: 10px;
+      &:hover, &:focus, &:active {
+
+        transition: 300ms;
+      }
+    }
+  }
+}

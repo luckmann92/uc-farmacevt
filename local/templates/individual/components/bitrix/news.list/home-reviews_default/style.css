@@ -1,0 +1,128 @@
+.reviews__list .section-title {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.reviews-nav__list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.review-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7px;
+}
+.review-nav__item.slick-current .review-nav__image:before, .review-nav__item.slick-current .review-nav__image:after {
+    display: block;
+}
+.review-nav__image {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    cursor: pointer;
+}
+.review-nav__image:before, .review-nav__image:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+.review-nav__image:before {
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border-width: 4px;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+}
+.review-nav__image:after {
+    width: 0;
+    height: 0;
+    bottom: -7px;
+    left: calc(50% - 7px);
+    border-style: solid;
+    border-width: 9px 7px 0 7px;
+}
+.review__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 36px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.review__arrow:after, .review__arrow:before {
+    content: '';
+    position: absolute;
+    display: block;
+}
+.review__arrow:before {
+    top: calc(50% - 4px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+.review__arrow:after {
+    top: calc(50% - 1px);
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+}
+.review__arrow:hover:after, .review__arrow:focus:after, .review__arrow:active:after {
+    background: #333;
+}
+.review__prev {
+    left: 0;
+}
+.review__prev:before {
+    left: 0;
+    border-width: 4px 6px 4px 0;
+}
+.review__prev:hover:before, .review__prev:focus:before, .review__prev:active:before {
+    border-color: transparent #333 transparent transparent;
+}
+.review__next {
+    right: 0;
+}
+.review__next:before {
+    right: 0;
+    border-width: 4px 0 4px 6px;
+}
+.review__next:hover:before, .review__next:focus:before, .review__next:active:before {
+    border-color: transparent transparent transparent #333;
+}
+.review-main__desc {
+    margin-bottom: 50px;
+}
+.review-client__name {
+    font-size: 1.125rem;
+    color: #333;
+    font-weight: bold;
+}
+.review-client__optional {
+    color: #aaa9ad;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .reviews-nav__list {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .review-nav__image {
+        width: 60px;
+        height: 60px;
+    }
+}

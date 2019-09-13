@@ -1,0 +1,105 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 16px;
+  padding:0;
+  border-radius:25px;
+  transition: 250ms;
+  cursor: pointer;
+  &:after, &:before {
+    transition: 250ms;
+  }
+  &:hover, &:focus, &:active {
+    text-decoration:none;
+  }
+}
+.btn-default {
+  border: 2px solid;
+  font-size: 0.875rem;
+  padding: 12px 27px;
+  svg {
+    path {
+      fill:#ff223d;
+    }
+  }
+  &:hover, &:focus, &:active {
+    color:#fff;
+    svg {
+      path {
+        fill:#fff;
+      }
+    }
+  }
+}
+.btn-primary {
+  padding: 12px 27px;
+  border: 2px solid;
+  font-size: 0.875rem;
+  color: #fff;
+  svg {
+    fill: #fff;
+  }
+  &:hover, &:focus, &:active {
+    background-color:transparent;
+  }
+}
+
+.btn-link {
+  padding-right: 55px;
+  &:after, &:before {
+    position: absolute;
+    content: '';
+    display: block;
+  }
+  &:before {
+    width:28px;
+    height:2px;
+    bottom:8px;
+    border-radius: 0 50% 50% 0;
+    right:0;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 6px;
+    bottom:5px;
+    right:-1px;
+  }
+  &:hover, &:focus, &:active {
+    color:#333;
+    &:before {
+      background:#333;
+    }
+    &:after {
+      border-color: transparent transparent transparent #333;
+    }
+  }
+}
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width:2px;
+  border-style: solid;
+  width:46px;
+  height:46px;
+  border-radius: 50%;
+}
+.c-white {
+  .btn-link {
+    &:hover, &:focus, &:active {
+      color:#fff;
+      &:before {
+        background:#fff;
+      }
+      &:after {
+        border-color: transparent transparent transparent #fff;
+      }
+    }
+  }
+}

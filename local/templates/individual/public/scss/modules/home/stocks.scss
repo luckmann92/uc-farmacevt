@@ -1,0 +1,52 @@
+.section-stocks {
+  position:relative;
+  overflow-x: hidden;
+}
+.stock-item {
+  position: relative;
+  display: block;
+  padding: 100px 0 145px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  box-sizing: border-box;
+  z-index: 1;
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #000;
+    opacity: .5;
+  }
+  .stock-item__link {
+    background-color: transparent;
+  }
+}
+.stock-item__caption {
+  text-align: center;
+  font-size: 2.4rem;
+  /*font-size: 2.375rem;*/
+  color:#fff;
+  b {
+    font-size: 1.2rem;
+    span {
+      font-size:1.2rem;
+      font-weight:bold;
+    }
+  }
+  p {
+    font-size: .9em;
+    &:first-child {
+      font-size: 1.2rem;
+      margin-bottom:0;
+      margin-bottom:0;
+    }
+  }
+  p, b {
+    color:#fff;
+  }
+}

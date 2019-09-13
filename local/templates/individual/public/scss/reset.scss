@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+}
+body {
+  // font-family: 'Geometria', sans-serif;
+  font-size: 1em;
+  line-height: 1.8;
+  color:#333;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+* {
+  box-sizing:border-box;
+  outline:none;
+}
+table {
+  max-width:100%;
+}
+a {
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+div {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+* {
+  outline:none;
+}
+p {
+  margin: 0 0 20px 0;
+}
+img {
+  width:auto;
+  max-width: 100%;
+}
+header {
+  background-color: #fff;
+}
+div.fancybox-overlay {
+  background: rgba(211, 211, 211, 0.9);
+}
+.img__pin {
+  width: 38%;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+table {
+  border-spacing: 0;
+}
+
+.logo-font {
+  fill: #333;
+}
+.logo-font {
+  fill: #333;
+}
+.menu__dots {
+  position: absolute;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: calc(50% - 2px);
+  left: 28px;
+}
+.menu__dots:before, .menu__dots:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+.menu__dots:before {
+  left: -7px;
+}
+.menu__dots:after {
+  right: -7px;
+}

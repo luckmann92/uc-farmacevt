@@ -1,0 +1,25 @@
+.header-top:before, .advantages__wrapper:before,
+.header-bottom .catalog__menu li a:hover:before,
+.header__bottom, .header-bottom,
+.btn.b-dark:hover, .btn.b-dark:focus, .btn.b-dark:active,
+.header__list li.more__menu .submenu li a,
+.catalog__menu li.more__menu .submenu li a,
+.area__text ul li:before
+{
+    background-color: MAIN;
+}
+.btn.b-dark:hover, .btn.b-dark:focus, .btn.b-dark:active,
+.partners-prev:after, .partners-next:after
+{
+    border-color: MAIN;
+}
+.header__list li.more__menu .submenu li a,
+.btn.b-dark:hover, .btn.b-dark:focus, .btn.b-dark:active,
+.header__bottom .header__list li a,
+.header-bottom .header__list li a
+{
+    color:#fff;
+}
+.header .menu__dots, .header .menu__dots:after, .header .menu__dots:before {
+    background-color: #fff;
+}
