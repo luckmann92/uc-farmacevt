@@ -9,10 +9,12 @@
  * @var array                    $arResult
  * @var CBitrixComponentTemplate $this
  */
+
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 $labelProduct = is_array($arResult['PROPERTIES']['PRODUCT_LABEL']['VALUE_XML_ID']) ? 'label__' . $arResult['PROPERTIES']['PRODUCT_LABEL']['VALUE_XML_ID'][0] : false;
 ?>
+
 <div class="row justify-content-between <?=$labelProduct?> product-detail" id="<?=$this->GetEditAreaId($arResult['ID'])?>">
     <div class="col-lg-5 col-md-7">
         <div class="row product-images">
